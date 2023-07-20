@@ -20,6 +20,7 @@ services:
       - 8081:9090
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus_data:/prometheus
     restart: always
     environment:
       - TZ=Asia/Taipei
